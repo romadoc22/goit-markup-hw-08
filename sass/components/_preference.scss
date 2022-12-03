@@ -1,0 +1,38 @@
+.section-preferens {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.preferens__list {
+}
+.preferens__itempr {
+  color: $primary-text-color;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+}
+
+.preferens__icon {
+  margin-bottom: 30px;
+  padding: 25px 190px;
+
+  background: $color-btn-bg;
+  border-radius: 4px;
+}
+
+.preferens__title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+.preferens__p {
+  margin-top: 10px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $title-tex-color;
+}

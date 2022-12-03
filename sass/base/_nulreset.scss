@@ -1,0 +1,68 @@
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Утіліти */
+.list,
+.filter,
+.list-item,
+.list-filter,
+.list-style,
+.list-examples,
+.list-team,
+.list-footer,
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1600px) {
+    width: 1600px;
+  }
+}
+
+// .section-hero,
+// .section-preferens,
+// .section-examples,
+// .section-team,
+// .section-filter,
+// .section-clients {
+//   padding-top: 94px;
+//   padding-bottom: 94px;
+// }

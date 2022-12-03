@@ -1,0 +1,54 @@
+@import './base/nulreset';
+@import './utilites/vishid';
+@import './utilites/variables';
+@import './base/normalize';
+@import './components/hero';
+@import './components/preference';
+@import './components/examples';
+@import './components/team';
+@import './components/clients';
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  display: block;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 15px;
+  padding-right: auto;
+
+  @media screen and (min-width: 480px) {
+    max-width: 1600px;
+    width: 480px;
+  }
+}
+
+.header-nav {
+  display: none;
+}
+
+.header-auth {
+  display: none;
+}
+
+.header__logo {
+  color: $primary-text-color;
+  font-family: $secondary-font;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.header__title {
+  color: $accent-color;
+  font-family: $secondary-font;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
