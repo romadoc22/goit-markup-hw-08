@@ -667,14 +667,29 @@ summary {
 }
 
 .clients__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   list-style: none;
-  margin-bottom: 94px;
-  gap: 30px;
+  margin-bottom: 60px;
 }
 
 .clients__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 15px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   padding: 16px 32px;
@@ -700,17 +715,11 @@ summary {
   padding: 60px 0;
 }
 
-.footblock {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+.footer-adress {
+  text-align: center;
 }
 
 .footer-adress__logo {
-  display: block;
   margin-bottom: 20px;
   text-decoration: none;
 }
@@ -731,6 +740,10 @@ summary {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+}
+
+.footer-info__list {
+  margin-top: 28px;
 }
 
 .footer-info__link a {
@@ -766,8 +779,7 @@ summary {
 }
 
 .footlist {
-  margin-left: 70px;
-  margin-right: 93px;
+  text-align: center;
 }
 .footlist__title {
   font-family: "Roboto";
@@ -778,12 +790,16 @@ summary {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 20px;
+  margin-top: 60px;
   color: #ffffff;
 }
 .footlist__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .footlist__link {
   background-color: rgba(255, 255, 255, 0.1);
@@ -795,15 +811,6 @@ summary {
   background-color: #2196f3;
 }
 .footlist__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   width: 44px;
   height: 44px;
   fill: #ffffff;
@@ -812,12 +819,18 @@ summary {
   fill: #ffffff;
 }
 
+.footer-form {
+  margin-top: 60px;
+  text-align: center;
+}
+
 .footer-form input {
-  width: 360px;
+  width: 450px;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
   margin-top: 20px;
+  margin-bottom: 20px;
   outline: none;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));

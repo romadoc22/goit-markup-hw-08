@@ -13,17 +13,24 @@
   color: $primary-text-color;
 }
 .clients__link {
+  display: flex;
   flex-wrap: wrap;
+
   // align-items: center;
-  // justify-content: center;
+  justify-content: center;
   list-style: none;
-  margin-bottom: 94px;
-  gap: 30px;
+  // margin-bottom: 94px;
+  // gap: 30px;
+  margin-bottom: 60px;
 }
 .clients__item {
-  // display: flex;
-  // align-items: center;
-  // justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // width: calc(100% - 2 * 15px / 2);
+
+  // width: 50%;
+  margin: 15px;
   border: 1px solid $icon-color;
   border-radius: 4px;
   padding: 16px 32px;

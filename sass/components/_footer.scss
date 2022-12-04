@@ -3,13 +3,11 @@
   padding: 60px 0;
 }
 
-.footblock {
-  display: flex;
-  align-items: baseline;
+.footer-adress {
+  text-align: center;
 }
 
 .footer-adress__logo {
-  display: block;
   margin-bottom: 20px;
   text-decoration: none;
 
@@ -31,6 +29,10 @@
     line-height: 1.19;
     letter-spacing: 0.03em;
   }
+}
+
+.footer-info__list {
+  margin-top: 28px;
 }
 
 .footer-info__link a {
@@ -66,8 +68,7 @@
   }
 }
 .footlist {
-  margin-left: 70px;
-  margin-right: 93px;
+  text-align: center;
 
   &__title {
     font-family: 'Roboto';
@@ -79,10 +80,12 @@
     text-transform: uppercase;
 
     margin-bottom: 20px;
+    margin-top: 60px;
     color: $pimary-white-color;
   }
   &__list {
     display: flex;
+    justify-content: center;
   }
   &__link {
     background-color: rgba(255, 255, 255, 0.1);
@@ -94,9 +97,9 @@
     }
   }
   &__item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
     width: 44px;
     height: 44px;
     fill: $pimary-white-color;
@@ -106,12 +109,18 @@
   }
 }
 
+.footer-form {
+  margin-top: 60px;
+  text-align: center;
+}
+
 .footer-form input {
-  width: 360px;
+  width: 450px;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
   margin-top: 20px;
+  margin-bottom: 20px;
   outline: none;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
