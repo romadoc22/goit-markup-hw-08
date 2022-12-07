@@ -1,9 +1,7 @@
 .section-hero {
-  max-width: 1600px;
+  // max-width: 1600px;
   background: rgba(47, 48, 58, 0.4);
   text-align: center;
-  padding-left: 15px;
-  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -20,7 +18,7 @@
 
   &__title {
     max-width: 696px;
-    // display: block;
+    display: block;
     color: $pimary-white-color;
 
     font-weight: 900;
@@ -30,7 +28,7 @@
     margin: 0 auto 30px;
   }
   &__button {
-    // display: block;
+    display: block;
     padding: 10px 34px;
     min-width: 216px;
     text-align: center;

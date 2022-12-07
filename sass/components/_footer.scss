@@ -1,3 +1,11 @@
+.footblock {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
 .footer {
   background-color: $primary-background-color;
   padding: 60px 0;
@@ -82,6 +90,10 @@
     margin-bottom: 20px;
     margin-top: 60px;
     color: $pimary-white-color;
+
+    @media screen and (min-width: 768px) {
+      margin-top: 0;
+    }
   }
   &__list {
     display: flex;
@@ -97,9 +109,9 @@
     }
   }
   &__item {
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 44px;
     height: 44px;
     fill: $pimary-white-color;
@@ -112,6 +124,16 @@
 .footer-form {
   margin-top: 60px;
   text-align: center;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+    display: block;
+  }
 }
 
 .footer-form input {
@@ -126,6 +148,10 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: $primary-background-color;
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
 }
 .footer-form__title {
   font-weight: 700;
@@ -134,6 +160,10 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $pimary-white-color;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 .footer-form__btn {
   font-family: 'Roboto';
@@ -155,6 +185,12 @@
   padding-right: 62px;
   margin-left: 12px;
   border: none;
+
+  @media screen and (min-width: 768px) {
+    // width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .footer-form__icon {
   fill: $pimary-white-color;

@@ -3,21 +3,51 @@
   padding-bottom: 60px;
 }
 
+.preferens {
+  @media screen and (min-width: 1200px) {
+    margin: 0;
+  }
+}
+
 .preferens__list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 1600px;
+  }
 }
 .preferens__itempr {
   color: $primary-text-color;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 2 * 30px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 270px;
+  }
 }
 
 .preferens__icon {
   margin-bottom: 30px;
-  padding: 25px 190px;
+  padding: 25px 145px;
 
   background: $color-btn-bg;
   border-radius: 4px;
+
+  @media screen and (min-width: 1200px) {
+    padding: 25px 100px;
+  }
 }
 
 .preferens__title {

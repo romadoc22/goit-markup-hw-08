@@ -22,11 +22,6 @@
 }
 
 .team-list {
-  // display: flex;
-  // flex-wrap: nowrap;
-  // justify-content: center;
-  // gap: 30px;
-
   &__item {
     background-color: $pimary-white-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -41,6 +36,13 @@
       color: $title-tex-color;
       text-align: center;
     }
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 30px;
   }
 }
 

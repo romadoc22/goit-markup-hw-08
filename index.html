@@ -19,31 +19,73 @@
   <header>
     <div class="container header">
       <a href="/" class="header__logo"> <span class="header__title">Web</span>Studio </a>
-      <nav>
-        <ul class="header-nav">
-          <li class="header-nav__item"><a href="./index.html"
-              class="header-nav__link header-nav__link--current">Студія</a>
+
+      <button type="button" class="mobile-button is-open" aria-controls="menu-container" aria-expanded="false"
+        data-menu-button>
+        <svg width="40" height="40" aria-label="перемикач мобільного меню">
+          <use class="icon-burger" href="./images/SVG/icons/symbol-defs.svg#icon-burger"></use>
+          <use class="icon-cross" href="/images/SVG/icons/symbol-defs.svg#icon-cross"></use>
+        </svg>
+      </button>
+
+      <div class="menu-container is-open" id="menu-container" data-menu>
+        <!-- <nav>
+          <ul class="header-nav">
+            <li class="header-nav__item"><a href="./index.html"
+                class="header-nav__link header-nav__link--current">Студія</a>
+            </li>
+            <li class="header-nav__item"><a href="./portfolio.html" class="header-nav__link">Портфоліо</a></li>
+            <li class="header-nav__item"><a href="" class="header-nav__link">Контакти</a></li>
+          </ul>
+        </nav>
+        <ul class="header-auth">
+          <li class="header-auth__item">
+            <a href="mailto:info@devstudio.com" class="header-auth__link"><svg class="header-auth__icon" width="16"
+                height="12">
+                <use href="./images/SVG/icons/symbol-defs.svg#icon-mail">
+                </use>
+              </svg>
+              info@devstudio.com</a>
           </li>
-          <li class="header-nav__item"><a href="./portfolio.html" class="header-nav__link">Портфоліо</a></li>
-          <li class="header-nav__item"><a href="" class="header-nav__link">Контакти</a></li>
-        </ul>
-      </nav>
-      <ul class="header-auth">
-        <li class="header-auth__item">
-          <a href="mailto:info@devstudio.com" class="header-auth__link"><svg class="header-auth__icon" width="16"
-              height="12">
-              <use href="./images/SVG/icons/symbol-defs.svg#icon-mail">
-              </use>
-            </svg>
-            info@devstudio.com</a>
+          <li class="header-auth__item">
+            <a href="tel:+380961111111" class="header-auth__link"> <svg class="header-auth__icon" width="10"
+                height="16">
+                <use href="./images/SVG/icons/symbol-defs.svg#icon-tel">
+                </use>
+              </svg> +38 096 111 11 11</a>
+          </li>
+        </ul> -->
+      </div>
+
+    </div>
+
+
+
+    <nav>
+      <ul class="header-nav">
+        <li class="header-nav__item"><a href="./index.html"
+            class="header-nav__link header-nav__link--current">Студія</a>
         </li>
-        <li class="header-auth__item">
-          <a href="tel:+380961111111" class="header-auth__link"> <svg class="header-auth__icon" width="10" height="16">
-              <use href="./images/SVG/icons/symbol-defs.svg#icon-tel">
-              </use>
-            </svg> +38 096 111 11 11</a>
-        </li>
+        <li class="header-nav__item"><a href="./portfolio.html" class="header-nav__link">Портфоліо</a></li>
+        <li class="header-nav__item"><a href="" class="header-nav__link">Контакти</a></li>
       </ul>
+    </nav>
+    <ul class="header-auth">
+      <li class="header-auth__item">
+        <a href="mailto:info@devstudio.com" class="header-auth__link"><svg class="header-auth__icon" width="16"
+            height="12">
+            <use href="./images/SVG/icons/symbol-defs.svg#icon-mail">
+            </use>
+          </svg>
+          info@devstudio.com</a>
+      </li>
+      <li class="header-auth__item">
+        <a href="tel:+380961111111" class="header-auth__link"> <svg class="header-auth__icon" width="10" height="16">
+            <use href="./images/SVG/icons/symbol-defs.svg#icon-tel">
+            </use>
+          </svg> +38 096 111 11 11</a>
+      </li>
+    </ul>
     </div>
   </header>
   <main>
@@ -479,6 +521,7 @@
   </div>
 
   <script src="./js/modal.js"></script>
+  <script src="./js/menu.js"></script>
 
 </body>
 
