@@ -4,6 +4,11 @@ img {
   height: auto;
 }
 
+// body {
+//   color: $primary-text-color;
+//   font-family: $primary-font;
+// }
+
 /* Утіліти */
 .list,
 .filter,
@@ -38,22 +43,18 @@ ul {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 480px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
 
-  @media screen and (min-width: 480px) {
-    width: 480px;
-  }
-
   @media screen and (min-width: 768px) {
-    width: 768px;
+    max-width: 768px;
   }
 
   @media screen and (min-width: 1200px) {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 

@@ -1,23 +1,28 @@
-.footblock {
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-}
-
 .footer {
   background-color: $primary-background-color;
   padding: 60px 0;
 }
 
-.footer-adress {
-  text-align: center;
+.footblock {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    align-items: baseline;
+  }
 }
 
 .footer-adress__logo {
-  margin-bottom: 20px;
+  display: block;
+
+  margin-bottom: 28px;
   text-decoration: none;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 20px;
+  }
 
   &--span {
     font-family: 'Raleway';
@@ -40,7 +45,8 @@
 }
 
 .footer-info__list {
-  margin-top: 28px;
+  text-align: center;
+  margin-bottom: 60px;
 }
 
 .footer-info__link a {
@@ -60,7 +66,11 @@
 }
 
 .footer-info__link:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 12px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
 }
 
 .footer-info__geo {
@@ -78,6 +88,15 @@
 .footlist {
   text-align: center;
 
+  margin-left: 137px;
+  margin-right: 137px;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+    margin-right: 93px;
+  }
+
   &__title {
     font-family: 'Roboto';
     font-style: normal;
@@ -88,16 +107,10 @@
     text-transform: uppercase;
 
     margin-bottom: 20px;
-    margin-top: 60px;
     color: $pimary-white-color;
-
-    @media screen and (min-width: 768px) {
-      margin-top: 0;
-    }
   }
   &__list {
     display: flex;
-    justify-content: center;
   }
   &__link {
     background-color: rgba(255, 255, 255, 0.1);
@@ -122,16 +135,15 @@
 }
 
 .footer-form {
-  margin-top: 60px;
   text-align: center;
 
   @media screen and (min-width: 768px) {
     display: flex;
+    justify-content: center;
     flex-direction: column;
   }
 
   @media screen and (min-width: 1200px) {
-    margin-top: 0;
     display: block;
   }
 }
@@ -150,7 +162,7 @@
   background-color: $primary-background-color;
 
   @media screen and (min-width: 1200px) {
-    width: 358px;
+    width: 360px;
   }
 }
 .footer-form__title {
@@ -165,6 +177,7 @@
     text-align: left;
   }
 }
+
 .footer-form__btn {
   font-family: 'Roboto';
   font-weight: 700;
@@ -183,13 +196,17 @@
   padding-bottom: 10px;
   padding-left: 28px;
   padding-right: 62px;
-  margin-left: 12px;
   border: none;
+  margin-bottom: 60px;
 
   @media screen and (min-width: 768px) {
-    // width: 200px;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
   }
 }
 .footer-form__icon {

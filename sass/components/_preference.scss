@@ -1,68 +1,64 @@
-.section-preferens {
+.preferens__list {
+  display: block;
   padding-top: 60px;
   padding-bottom: 60px;
-}
 
-.preferens {
-  @media screen and (min-width: 1200px) {
-    margin: 0;
-  }
-}
-
-.preferens__list {
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 30px;
   }
 
   @media screen and (min-width: 1200px) {
     display: flex;
-    flex-wrap: nowrap;
-    max-width: 1600px;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
   }
 }
 .preferens__itempr {
+  max-width: 450px;
   color: $primary-text-color;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
-
   @media screen and (min-width: 768px) {
-    width: calc((100% - 2 * 30px) / 2);
+    max-width: 354px;
   }
-
   @media screen and (min-width: 1200px) {
     max-width: 270px;
   }
 }
 
 .preferens__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 30px;
-  padding: 25px 145px;
+  padding: 25px 0;
 
   background: $color-btn-bg;
   border-radius: 4px;
-
-  @media screen and (min-width: 1200px) {
-    padding: 25px 100px;
-  }
 }
 
 .preferens__title {
-  text-align: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 .preferens__p {
   margin-top: 10px;
+  margin-bottom: 30px;
 
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: $title-tex-color;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
 }
