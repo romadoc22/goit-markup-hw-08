@@ -40,6 +40,7 @@ ul {
 }
 
 .container {
+  min-width: 280px;
   max-width: 480px;
   margin-left: auto;
   margin-right: auto;
@@ -460,7 +461,6 @@ header {
   background-color: #ffffff;
   padding: 48px 40px;
   font-size: 40px;
-  list-style: none;
 }
 .menu-container.is-open {
   display: block;
@@ -468,7 +468,6 @@ header {
 
 .menu-container__list--nav {
   margin-bottom: 306px;
-  text-decoration: none;
 }
 
 .menu-container__list--nav .menu-container__item,
@@ -484,6 +483,20 @@ header {
   line-height: 1.175;
   letter-spacing: 0.02em;
   color: #212121;
+}
+
+.menu-container__list--soc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2222222222;
+  letter-spacing: 0.02em;
+  color: #2196f3;
 }
 
 .section-hero {
@@ -632,7 +645,22 @@ header {
 }
 
 .section-examples {
-  padding-top: 0;
+  padding-bottom: 94px;
+}
+@media screen and (min-width: 480px) {
+  .section-examples {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section-examples {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-examples {
+    display: block;
+  }
 }
 
 .examples__title {

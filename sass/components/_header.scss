@@ -164,7 +164,7 @@ header {
   background-color: #ffffff;
   padding: 48px 40px;
   font-size: 40px;
-  list-style: none;
+  // list-style: none;
 
   &.is-open {
     display: block;
@@ -173,7 +173,6 @@ header {
 
 .menu-container__list--nav {
   margin-bottom: 306px;
-  text-decoration: none;
 }
 
 .menu-container__list--nav .menu-container__item,
@@ -189,4 +188,18 @@ header {
   letter-spacing: 0.02em;
 
   color: #212121;
+}
+
+.menu-container__list--soc {
+  display: flex;
+  list-style: none;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: calc(22 / 18);
+
+  letter-spacing: 0.02em;
+
+  color: #2196f3;
 }
