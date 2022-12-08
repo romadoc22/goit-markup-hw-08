@@ -1,11 +1,11 @@
 .section-team {
   background-color: $color-btn-bg;
 
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
-    width: 768px;
-  }
+  // @media screen and (min-width: 768px) {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   width: 768px;
+  // }
 }
 
 .team {
@@ -16,7 +16,6 @@
 
   &__title {
     text-align: center;
-    // padding-bottom: 50px;
     padding-top: 60px;
     padding-bottom: 30px;
     margin: auto;
@@ -25,17 +24,16 @@
     letter-spacing: 0.03em;
     color: $primary-text-color;
   }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 50px;
+  }
 }
 
 .team-list {
   display: block;
   // width: 450px;
   margin-bottom: 60px;
-
-  // @media screen and (min-width: 767.98px) {
-  //   width: 450px;
-
-  // }
 
   @media screen and (min-width: 768px) {
     display: flex;
@@ -46,10 +44,14 @@
     // flex-basis: calc ((100% - 60) / 2);
   }
 
-  // display: flex;
-  // flex-wrap: nowrap;
-  // justify-content: center;
-  // gap: 30px;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 30px;
+
+    // flex-basis: calc ((100% - 60) / 2);
+  }
 
   &__item {
     background-color: $pimary-white-color;
@@ -58,6 +60,7 @@
     border-radius: 0px 0px 4px 4px;
 
     @media screen and (min-width: 768px) {
+      width: 354px;
     }
 
     &--description {
@@ -74,12 +77,12 @@
 .team-action {
   display: flex;
   list-style: none;
-  // justify-content: space-between;
   justify-content: center;
-  // margin: 16px 30px 32px 32px;
   margin: 16px 24px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
+    justify-content: space-between;
+    margin: 16px 30px 32px 32px;
   }
 
   &__link {

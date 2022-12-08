@@ -2,12 +2,18 @@
   max-width: 1600px;
   background: rgba(47, 48, 58, 0.4);
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+
+  padding-top: 118px;
+  padding-bottom: 118px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hat.jpg);
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .hero {
@@ -19,14 +25,25 @@
     color: $pimary-white-color;
 
     font-weight: 900;
-    font-size: 44px;
+    font-size: 26px;
+
     line-height: 1.3636;
     letter-spacing: 0.06em;
     margin: 0 auto 30px;
+
+    //   @media screen and (min-width: 768px) {
+    //   }
+    // }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 44px;
+    }
   }
+
   &__button {
     display: block;
-    padding: 10px 34px;
+
+    padding: 10px 24px;
     min-width: 216px;
     text-align: center;
     border-radius: 4px;
@@ -41,5 +58,9 @@
     border: none;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 10px 34px;
   }
 }
