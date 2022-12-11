@@ -1676,11 +1676,30 @@ summary {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 6px;
-  margin-bottom: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  gap: 8px;
+}
+@media screen and (min-width: 768px) {
+  .filter {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 14px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filter {
+    margin-bottom: 34px;
+    margin-top: 94px;
+  }
 }
 
 .list-filter {
@@ -1693,8 +1712,18 @@ summary {
   gap: 30px;
 }
 .list-filter__item {
-  width: 370px;
+  width: 450px;
   border: 1px solid #eeeeee;
+}
+@media screen and (min-width: 768px) {
+  .list-filter__item {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .list-filter__item {
+    width: 370px;
+  }
 }
 .list-filter__item:hover {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
