@@ -133,7 +133,12 @@
   }
 
   &__item {
-    margin-left: 75px;
+    margin-left: 40px;
+
+    @media screen and (min-width: 1200px) {
+      display: inline-flex;
+      align-items: flex-end;
+    }
   }
 
   &__link {

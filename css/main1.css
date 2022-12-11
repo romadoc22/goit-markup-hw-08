@@ -466,7 +466,17 @@ summary {
   }
 }
 .header-auth__item {
-  margin-left: 75px;
+  margin-left: 40px;
+}
+@media screen and (min-width: 1200px) {
+  .header-auth__item {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
 }
 .header-auth__link {
   display: -webkit-inline-box;
