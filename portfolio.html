@@ -17,15 +17,59 @@
 </head>
 
 <body>
-  <header>
+  <header class="page-header">
     <div class="container header">
       <a href="/" class="header__logo"> <span class="header__title">Web</span>Studio </a>
+
+      <button type="button" class="burger" data-menu-button="" aria-expanded="false" aria-controls="mobile-menu">
+        <svg width="40" height="40" aria-label="мобільне меню">
+          <use class="burger__icon--open" href="./images/SVG/icons/symbol-defs.svg#icon-burger"></use>
+          <use class="burger__icon--close" href="/images/SVG/icons/symbol-defs.svg#icon-cross"></use>
+        </svg>
+      </button>
+
+      <div class="mobile-menu" id="mobile-menu" data-menu>
+        <ul class="mobile-menu__list">
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link mobile-menu__link--current" href="./index.html">Студія</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="./portfolio.html">Портфоліо</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="">Контакти</a>
+          </li>
+        </ul>
+
+        <ul class="mobile-menu__contact">
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__address--tel" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__address--mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+        </ul>
+        <ul class="mobile-menu__social--flex">
+          <li class="mobile-menu__social-item">
+            <a class="mobile-menu__social-link" href="">Instagram</a>
+          </li>
+          <li class="mobile-menu__social-item">
+            <a class="mobile-menu__social-link" href="">Twitter</a>
+          </li>
+          <li class="mobile-menu__social-item">
+            <a class="mobile-menu__social-link" href="">Facebook</a>
+          </li>
+          <li class="mobile-menu__social-item">
+            <a class="mobile-menu__social-link" href="">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
       <nav>
         <ul class="header-nav">
-          <li class="header-nav__item"><a href="./index.html" class="header-nav__link ">Студія</a>
+          <li class="header-nav__item"><a href="./index.html"
+              class="header-nav__link header-nav__link--current">Студія</a>
           </li>
-          <li class="header-nav__item"><a href="./portfolio.html"
-              class="header-nav__link header-nav__link--current">Портфоліо</a></li>
+          <li class="header-nav__item"><a href="./portfolio.html" class="header-nav__link ">Портфоліо</a></li>
           <li class="header-nav__item"><a href="" class="header-nav__link">Контакти</a></li>
         </ul>
       </nav>
@@ -46,260 +90,270 @@
         </li>
       </ul>
     </div>
-  </header>
 
-  <main>
-    <section class="section-filter">
-      <h1 class=" visually-hidden">Портфоліо</h1>
-      <div class="container filterb">
-        <ul class="filter">
-          <li class="filter__btn"><button type="button">Усі</button></li>
-          <li class="filter__btn"><button type="button">Веб-сайти</button></li>
-          <li class="filter__btn"><button type="button">Додатки</button></li>
-          <li class="filter__btn"><button type="button">Дизайн</button></li>
-          <li class="filter__btn"><button type="button">Маркетинг</button></li>
-        </ul>
-      </div>
-
-      <div class="container flex">
-        <ul class="list-filter">
-          <li class="list-filter__item">
-            <a href="#" class="list-filter__link">
-              <div class="list-filter__img">
-                <img src="./images/portfolio/pf1.jpg" alt="foto1" width="370" height="294">
-                <div class="img-pg">
-                  <p class="img-pg__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-                    Все
-                    це дозволить
-                    відвідувачу отримати
-                    вичерпні відомості про компанію чи приватну особу.</p>
-                </div>
-              </div>
-              <div class="container fotoport">
-                <h2 class="fotoport__title">Технокряк</h2>
-                <p class="fotoport__p">Веб-сайт</p>
-              </div>
-            </a>
-          </li>
-          <li class="list-filter__item">
-            <a href="#" class="list-filter__link">
-              <div class="list-filter__img">
-                <img src="./images/portfolio/pf2.jpg" alt="foto1" width="370" height="294">
-                <div class="img-pg">
-                  <p class="img-pg__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-                    Все
-                    це дозволить
-                    відвідувачу отримати
-                    вичерпні відомості про компанію чи приватну особу.</p>
-                </div>
-              </div>
-              <div class="container fotoport">
-                <h2 class="fotoport__title">Постер New Orlean vs Golden Star</h2>
-                <p class="fotoport__p">Дизайн</p>
-              </div>
-            </a>
-          </li>
-          <li class="list-filter__item">
-            <a href="#" class="list-filter__link">
-              <div class="list-filter__img">
-                <img src="./images/portfolio/pf3.jpg" alt="foto1" width="370" height="294">
-                <div class="img-pg">
-                  <p class="img-pg__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-                    Все
-                    це дозволить
-                    відвідувачу отримати
-                    вичерпні відомості про компанію чи приватну особу.</p>
-                </div>
-              </div>
-              <div class="container fotoport">
-                <h2 class="fotoport__title">Ресторан Seafood</h2>
-                <p class="fotoport__p">Додаток</p>
-              </div>
-            </a>
-          </li>
-          <li class="list-filter__item">
-            <a href="#" class="list-filter__link">
-              <div class="list-filter__img">
-                <img src="./images/portfolio/pf4.jpg" alt="foto1" width="370" height="294">
-                <div class="img-pg">
-                  <p class="img-pg__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-                    Все
-                    це дозволить
-                    відвідувачу отримати
-                    вичерпні відомості про компанію чи приватну особу.</p>
-                </div>
-              </div>
-              <div class="container fotoport">
-                <h2 class="fotoport__title">Проєкт Prime</h2>
-                <p class="fotoport__p">Маркетинг</p>
-              </div>
-            </a>
-          </li>
-          <li class="list-filter__item">
-            <a href="#" class="list-filter__link">
-              <div class="list-filter__img">
-                <img src="./images/portfolio/pf5.jpg" alt="foto1" width="370" height="294">
-                <div class="img-pg">
-                  <p class="img-pg__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-                    Все
-                    це дозволить
-                    відвідувачу отримати
-                    вичерпні відомості про компанію чи приватну особу.</p>
-                </div>
-              </div>
-              <div class="container fotoport">
-                <h2 class="fotoport__title">Проєкт Boxes</h2>
-                <p class="fotoport__p">Додаток</p>
-              </div>
-            </a>
-          </li>
-          <li class="list-filter__item">
-            <a href="#" class="list-filter__link">
-              <div class="list-filter__img">
-                <img src="./images/portfolio/pf6.jpg" alt="foto1" width="370" height="294">
-                <div class="img-pg">
-                  <p class="img-pg__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-                    Все
-                    це дозволить
-                    відвідувачу отримати
-                    вичерпні відомості про компанію чи приватну особу.</p>
-                </div>
-              </div>
-              <div class="container fotoport">
-                <h2 class="fotoport__title">Inspiration has no Borders</h2>
-                <p class="fotoport__p">Веб-сайт</p>
-              </div>
-            </a>
-          </li>
-          <li class="list-filter__item">
-            <a href="#" class="list-filter__link">
-              <div class="list-filter__img">
-                <img src="./images/portfolio/pf7.jpg" alt="foto1" width="370" height="294">
-                <div class="img-pg">
-                  <p class="img-pg__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-                    Все
-                    це дозволить
-                    відвідувачу отримати
-                    вичерпні відомості про компанію чи приватну особу.</p>
-                </div>
-              </div>
-              <div class="container fotoport">
-                <h2 class="fotoport__title">Видання Limited Edition</h2>
-                <p class="fotoport__p">Дизайн</p>
-              </div>
-            </a>
-          </li>
-          <li class="list-filter__item">
-            <a href="#" class="list-filter__link">
-              <div class="list-filter__img">
-                <img src="./images/portfolio/pf8.jpg" alt="foto1" width="370" height="294">
-                <div class="img-pg">
-                  <p class="img-pg__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-                    Все
-                    це дозволить
-                    відвідувачу отримати
-                    вичерпні відомості про компанію чи приватну особу.</p>
-                </div>
-              </div>
-              <div class="container fotoport">
-                <h2 class="fotoport__title">Проєкт LAB</h2>
-                <p class="fotoport__p">Маркетинг</p>
-              </div>
-            </a>
-          </li>
-          <li class="list-filter__item">
-            <a href="#" class="list-filter__link">
-              <div class="list-filter__img">
-                <img src="./images/portfolio/pf9.jpg" alt="foto1" width="370" height="294">
-                <div class="img-pg">
-                  <p class="img-pg__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-                    Все
-                    це дозволить
-                    відвідувачу отримати
-                    вичерпні відомості про компанію чи приватну особу.</p>
-                </div>
-              </div>
-              <div class="container fotoport">
-                <h2 class="fotoport__title">Growing Business</h2>
-                <p class="fotoport__p">Додаток</p>
-              </div>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container footblock">
-      <div class="footer-adress">
-        <a href="/" class="footer-adress__logo"> <span class="footer-adress__logo--title">Web</span> <span
-            class="footer-adress__logo--span">Studio</span></a>
-        <address>
-          <ul class="footer-info__list">
-            <li class="footer-info__link">
-              <a href="https://goo.gl/maps/RN6VaMhkWxTvhAsJA" target="_blank" rel="noopener noreferrer nofollow">
-                <span class="footer-info__geo">м. Київ, пр-т Лесі Українки, 26</span> </a>
-            </li>
-            <li class="footer-info__link"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li class="footer-info__link"><a href="tel:380961111111">+38 096 111 11 11</a></li>
+    <main>
+      <section class="section-filter">
+        <h1 class=" visually-hidden">Портфоліо</h1>
+        <div class="container filterb">
+          <ul class="filter">
+            <li class="filter__btn"><button type="button">Усі</button></li>
+            <li class="filter__btn"><button type="button">Веб-сайти</button></li>
+            <li class="filter__btn"><button type="button">Додатки</button></li>
+            <li class="filter__btn"><button type="button">Дизайн</button></li>
+            <li class="filter__btn"><button type="button">Маркетинг</button></li>
           </ul>
-        </address>
+        </div>
+
+        <div class="container flex">
+          <ul class="list-filter">
+            <li class="list-filter__item">
+              <a href="#" class="list-filter__link">
+                <div class="list-filter__img">
+                  <img src="./images/portfolio/pf1.jpg" alt="foto1" width="370" height="294">
+                  <div class="img-pg">
+                    <p class="img-pg__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                      сервісів.
+                      Все
+                      це дозволить
+                      відвідувачу отримати
+                      вичерпні відомості про компанію чи приватну особу.</p>
+                  </div>
+                </div>
+                <div class="container fotoport">
+                  <h2 class="fotoport__title">Технокряк</h2>
+                  <p class="fotoport__p">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="list-filter__item">
+              <a href="#" class="list-filter__link">
+                <div class="list-filter__img">
+                  <img src="./images/portfolio/pf2.jpg" alt="foto1" width="370" height="294">
+                  <div class="img-pg">
+                    <p class="img-pg__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                      сервісів.
+                      Все
+                      це дозволить
+                      відвідувачу отримати
+                      вичерпні відомості про компанію чи приватну особу.</p>
+                  </div>
+                </div>
+                <div class="container fotoport">
+                  <h2 class="fotoport__title">Постер New Orlean vs Golden Star</h2>
+                  <p class="fotoport__p">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="list-filter__item">
+              <a href="#" class="list-filter__link">
+                <div class="list-filter__img">
+                  <img src="./images/portfolio/pf3.jpg" alt="foto1" width="370" height="294">
+                  <div class="img-pg">
+                    <p class="img-pg__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                      сервісів.
+                      Все
+                      це дозволить
+                      відвідувачу отримати
+                      вичерпні відомості про компанію чи приватну особу.</p>
+                  </div>
+                </div>
+                <div class="container fotoport">
+                  <h2 class="fotoport__title">Ресторан Seafood</h2>
+                  <p class="fotoport__p">Додаток</p>
+                </div>
+              </a>
+            </li>
+            <li class="list-filter__item">
+              <a href="#" class="list-filter__link">
+                <div class="list-filter__img">
+                  <img src="./images/portfolio/pf4.jpg" alt="foto1" width="370" height="294">
+                  <div class="img-pg">
+                    <p class="img-pg__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                      сервісів.
+                      Все
+                      це дозволить
+                      відвідувачу отримати
+                      вичерпні відомості про компанію чи приватну особу.</p>
+                  </div>
+                </div>
+                <div class="container fotoport">
+                  <h2 class="fotoport__title">Проєкт Prime</h2>
+                  <p class="fotoport__p">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="list-filter__item">
+              <a href="#" class="list-filter__link">
+                <div class="list-filter__img">
+                  <img src="./images/portfolio/pf5.jpg" alt="foto1" width="370" height="294">
+                  <div class="img-pg">
+                    <p class="img-pg__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                      сервісів.
+                      Все
+                      це дозволить
+                      відвідувачу отримати
+                      вичерпні відомості про компанію чи приватну особу.</p>
+                  </div>
+                </div>
+                <div class="container fotoport">
+                  <h2 class="fotoport__title">Проєкт Boxes</h2>
+                  <p class="fotoport__p">Додаток</p>
+                </div>
+              </a>
+            </li>
+            <li class="list-filter__item">
+              <a href="#" class="list-filter__link">
+                <div class="list-filter__img">
+                  <img src="./images/portfolio/pf6.jpg" alt="foto1" width="370" height="294">
+                  <div class="img-pg">
+                    <p class="img-pg__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                      сервісів.
+                      Все
+                      це дозволить
+                      відвідувачу отримати
+                      вичерпні відомості про компанію чи приватну особу.</p>
+                  </div>
+                </div>
+                <div class="container fotoport">
+                  <h2 class="fotoport__title">Inspiration has no Borders</h2>
+                  <p class="fotoport__p">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="list-filter__item">
+              <a href="#" class="list-filter__link">
+                <div class="list-filter__img">
+                  <img src="./images/portfolio/pf7.jpg" alt="foto1" width="370" height="294">
+                  <div class="img-pg">
+                    <p class="img-pg__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                      сервісів.
+                      Все
+                      це дозволить
+                      відвідувачу отримати
+                      вичерпні відомості про компанію чи приватну особу.</p>
+                  </div>
+                </div>
+                <div class="container fotoport">
+                  <h2 class="fotoport__title">Видання Limited Edition</h2>
+                  <p class="fotoport__p">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="list-filter__item">
+              <a href="#" class="list-filter__link">
+                <div class="list-filter__img">
+                  <img src="./images/portfolio/pf8.jpg" alt="foto1" width="370" height="294">
+                  <div class="img-pg">
+                    <p class="img-pg__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                      сервісів.
+                      Все
+                      це дозволить
+                      відвідувачу отримати
+                      вичерпні відомості про компанію чи приватну особу.</p>
+                  </div>
+                </div>
+                <div class="container fotoport">
+                  <h2 class="fotoport__title">Проєкт LAB</h2>
+                  <p class="fotoport__p">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="list-filter__item">
+              <a href="#" class="list-filter__link">
+                <div class="list-filter__img">
+                  <img src="./images/portfolio/pf9.jpg" alt="foto1" width="370" height="294">
+                  <div class="img-pg">
+                    <p class="img-pg__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                      сервісів.
+                      Все
+                      це дозволить
+                      відвідувачу отримати
+                      вичерпні відомості про компанію чи приватну особу.</p>
+                  </div>
+                </div>
+                <div class="container fotoport">
+                  <h2 class="fotoport__title">Growing Business</h2>
+                  <p class="fotoport__p">Додаток</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footblock">
+        <div class="footer-adress">
+          <a href="/" class="footer-adress__logo"> <span class="footer-adress__logo--title">Web</span> <span
+              class="footer-adress__logo--span">Studio</span></a>
+          <address>
+            <ul class="footer-info__list">
+              <li class="footer-info__link">
+                <a href="https://goo.gl/maps/RN6VaMhkWxTvhAsJA" target="_blank" rel="noopener noreferrer nofollow">
+                  <span class="footer-info__geo">м. Київ, пр-т Лесі Українки, 26</span> </a>
+              </li>
+              <li class="footer-info__link"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+              <li class="footer-info__link"><a href="tel:380961111111">+38 096 111 11 11</a></li>
+            </ul>
+          </address>
+        </div>
+        <div class="footlist">
+          <p class="footlist__title">ПРИЄДНУЙТЕСЬ</p>
+          <ul class="footlist__list">
+            <li class="footlist__link">
+              <a href="https://www.instagram.com" target="_blank" rel="noreferrer noopener nooferrer"
+                class="footlist__item">
+                <svg class="footlist__icon" width="20" height="20">
+                  <use href="./images/SVG/icons/symbol-defs.svg#icon-instagram">
+                  </use>
+                </svg>
+              </a>
+            </li>
+            <li class="footlist__link">
+              <a href="https://www.twitter.com/" target="_blank" rel="noreferrer noopener nooferrer"
+                class="footlist__item">
+                <svg class="footlist__icon" width="20" height="20">
+                  <use href="./images/SVG/icons/symbol-defs.svg#icon-twitter">
+                  </use>
+                </svg>
+              </a>
+            </li>
+            <li class="footlist__link">
+              <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener nooferrer"
+                class="footlist__item">
+                <svg class="footlist__icon" width="20" height="20">
+                  <use href="./images/SVG/icons/symbol-defs.svg#icon-facebook">
+                  </use>
+                </svg>
+              </a>
+            </li>
+            <li class="footlist__link">
+              <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer noopener nooferrer"
+                class="footlist__item">
+                <svg class="footlist__icon" width="20" height="20">
+                  <use href="./images/SVG/icons/symbol-defs.svg#icon-linkedin">
+                  </use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-form">
+          <p class="footer-form__title">Підпишіться на розсилку</p>
+          <input aria-label="mail" type="email" name="mail" placeholder="E-mail" required>
+          <button type="submit" class="footer-form__btn">
+            Підписатися
+            <svg class="footer-form__icon" width="24" height="24">
+              <use href="./images/SVG/icons/symbol-defs.svg#icon-iconsend">
+              </use>
+            </svg>
+          </button>
+        </div>
       </div>
-      <div class="footlist">
-        <p class="footlist__title">ПРИЄДНУЙТЕСЬ</p>
-        <ul class="footlist__list">
-          <li class="footlist__link">
-            <a href="https://www.instagram.com" target="_blank" rel="noreferrer noopener nooferrer"
-              class="footlist__item">
-              <svg class="footlist__icon" width="20" height="20">
-                <use href="./images/SVG/icons/symbol-defs.svg#icon-instagram">
-                </use>
-              </svg>
-            </a>
-          </li>
-          <li class="footlist__link">
-            <a href="https://www.twitter.com/" target="_blank" rel="noreferrer noopener nooferrer"
-              class="footlist__item">
-              <svg class="footlist__icon" width="20" height="20">
-                <use href="./images/SVG/icons/symbol-defs.svg#icon-twitter">
-                </use>
-              </svg>
-            </a>
-          </li>
-          <li class="footlist__link">
-            <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener nooferrer"
-              class="footlist__item">
-              <svg class="footlist__icon" width="20" height="20">
-                <use href="./images/SVG/icons/symbol-defs.svg#icon-facebook">
-                </use>
-              </svg>
-            </a>
-          </li>
-          <li class="footlist__link">
-            <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer noopener nooferrer"
-              class="footlist__item">
-              <svg class="footlist__icon" width="20" height="20">
-                <use href="./images/SVG/icons/symbol-defs.svg#icon-linkedin">
-                </use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer-form">
-        <p class="footer-form__title">Підпишіться на розсилку</p>
-        <input aria-label="mail" type="email" name="mail" placeholder="E-mail" required>
-        <button type="submit" class="footer-form__btn">
-          Підписатися
-          <svg class="footer-form__icon" width="24" height="24">
-            <use href="./images/SVG/icons/symbol-defs.svg#icon-iconsend">
-            </use>
-          </svg>
-        </button>
-      </div>
-    </div>
-  </footer>
+    </footer>
+
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>
