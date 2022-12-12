@@ -1,9 +1,5 @@
 .section-examples {
-  padding-bottom: 94px;
-
-  @media screen and (min-width: 480px) {
-    display: none;
-  }
+  display: none;
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -11,6 +7,8 @@
 
   @media screen and (min-width: 1200px) {
     display: block;
+    margin-bottom: 94px;
+    margin-top: 94px;
   }
 }
 
@@ -26,8 +24,6 @@
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-}
-.examples__item {
 }
 
 .examples__link {
