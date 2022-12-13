@@ -1352,6 +1352,11 @@ summary {
   border-radius: 4px;
   background-color: #2f303a;
 }
+@media screen and (min-width: 425px) {
+  .footer-form input {
+    width: 395px;
+  }
+}
 @media screen and (min-width: 480px) {
   .footer-form input {
     width: 450px;
@@ -1445,8 +1450,7 @@ summary {
 }
 
 .modal {
-  width: 450px;
-  height: 609px;
+  max-width: 450px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1470,8 +1474,8 @@ summary {
 
 .form {
   width: 370px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 @media screen and (min-width: 1200px) {
   .form {

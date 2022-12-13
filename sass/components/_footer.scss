@@ -161,6 +161,10 @@
   border-radius: 4px;
   background-color: $primary-background-color;
 
+  @media screen and (min-width: 425px) {
+    width: 395px;
+  }
+
   @media screen and (min-width: 480px) {
     width: 450px;
   }
