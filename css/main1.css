@@ -40,6 +40,8 @@ ul {
 }
 
 .container {
+  min-width: 320px;
+  max-width: 480px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -1471,14 +1473,18 @@ summary {
 }
 
 .form {
-  width: 370px;
+  max-width: 370px;
   margin-left: 40px;
   margin-right: 40px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 480px) {
   .form {
-    width: 448px;
-    height: 40px;
+    width: 450px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .form {
+    width: 528px;
   }
 }
 .form__title {
