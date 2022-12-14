@@ -86,10 +86,19 @@
 }
 .footlist {
   text-align: center;
-
-  margin-left: 137px;
-  margin-right: 137px;
   margin-bottom: 60px;
+  margin-top: 60px;
+
+  @media screen and (max-width: 767px) {
+    margin-left: 137px;
+    margin-right: 137px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 70px;
+    margin-right: 93px;
+    margin-top: 0;
+  }
 
   @media screen and (min-width: 1200px) {
     margin-left: 70px;
@@ -140,6 +149,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-top: 60px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -204,7 +214,6 @@
   padding-left: 28px;
   padding-right: 62px;
   border: none;
-  margin-bottom: 60px;
 
   @media screen and (min-width: 768px) {
     margin-right: auto;
