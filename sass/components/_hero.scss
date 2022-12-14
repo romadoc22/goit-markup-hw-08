@@ -18,7 +18,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      ('../images/Hero/imgheromob2.jpg');
+      url('../images/Hero/imgheromob2.jpg');
   }
 
   @media screen and (min-width: 768px) {
@@ -30,7 +30,7 @@
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        ('../images/Hero/tabhero1.jpg');
+        url('../images/Hero/tabhero1.jpg');
     }
   }
 
@@ -46,7 +46,7 @@
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        ('../images/Hero/deskhero2.jpg');
+        url('../images/Hero/deskhero2.jpg');
     }
   }
 }

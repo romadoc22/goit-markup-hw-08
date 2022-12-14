@@ -505,6 +505,7 @@ summary {
 }
 
 .burger {
+  display: block;
   position: relative;
   z-index: 2;
   padding: 0;
@@ -711,8 +712,8 @@ summary {
 }
 @media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .section-hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), "../images/Hero/imgheromob2.jpg";
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), "../images/Hero/imgheromob2.jpg";
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/Hero/imgheromob2.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Hero/imgheromob2.jpg");
   }
 }
 @media screen and (min-width: 768px) {
@@ -723,8 +724,8 @@ summary {
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .section-hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), "../images/Hero/tabhero1.jpg";
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), "../images/Hero/tabhero1.jpg";
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/Hero/tabhero1.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Hero/tabhero1.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
@@ -737,8 +738,8 @@ summary {
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .section-hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), "../images/Hero/deskhero2.jpg";
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), "../images/Hero/deskhero2.jpg";
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/Hero/deskhero2.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Hero/deskhero2.jpg");
   }
 }
 
@@ -1027,14 +1028,14 @@ summary {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 16px 24px;
+  padding: 16px 24px;
 }
 @media screen and (min-width: 1200px) {
   .team-action {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin: 16px 30px 32px 32px;
+    padding: 16px 30px;
   }
 }
 .team-action__link {
@@ -1130,7 +1131,7 @@ summary {
 }
 
 .clients__item {
-  width: 210px;
+  width: calc(50% - 30px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1151,6 +1152,11 @@ summary {
 }
 .clients__item:hover .clients__icon {
   fill: #2196f3;
+}
+@media screen and (min-width: 768px) {
+  .clients__item {
+    width: 210px;
+  }
 }
 @media screen and (min-width: 768px) {
   .clients__item {
@@ -1450,7 +1456,7 @@ summary {
 }
 
 .modal {
-  max-width: 450px;
+  width: calc(100% - 30px);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1464,6 +1470,11 @@ summary {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    max-width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal {

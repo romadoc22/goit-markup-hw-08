@@ -78,11 +78,11 @@
   display: flex;
   list-style: none;
   justify-content: center;
-  margin: 16px 24px;
+  padding: 16px 24px;
 
   @media screen and (min-width: 1200px) {
     justify-content: space-between;
-    margin: 16px 30px 32px 32px;
+    padding: 16px 30px;
   }
 
   &__link {
