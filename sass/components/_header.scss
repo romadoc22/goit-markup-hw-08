@@ -168,8 +168,9 @@
 
 .burger {
   display: block;
+  max-width: 480px;
   position: relative;
-  z-index: 2;
+  z-index: 3;
   padding: 0;
   margin-left: auto;
   border: none;
