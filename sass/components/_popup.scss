@@ -40,11 +40,13 @@
 }
 .form {
   max-width: 370px;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
 
   @media screen and (min-width: 480px) {
     width: 448px;
+    margin-left: 40px;
+    margin-right: 40px;
   }
 
   @media screen and (min-width: 1200px) {
