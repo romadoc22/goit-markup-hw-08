@@ -1367,7 +1367,7 @@ summary {
 }
 
 .footer-form input {
-  width: 290px;
+  width: 100%;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
@@ -1379,6 +1379,11 @@ summary {
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: #2f303a;
+  -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-form input:hover, .footer-form input:focus {
+  border-color: #2196f3;
 }
 @media screen and (min-width: 425px) {
   .footer-form input {
@@ -1551,6 +1556,7 @@ summary {
   color: #757575;
 }
 .form__input {
+  width: 100%;
   height: auto;
   padding-top: 11px;
   padding-bottom: 11px;
