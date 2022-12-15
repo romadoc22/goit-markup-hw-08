@@ -229,16 +229,24 @@
 }
 .mobile-menu__item {
   margin-bottom: 32px;
+
+  @media screen and (min-width: 480px) {
+    margin-bottom: 20px;
+  }
 }
 .mobile-menu__link {
   color: #212121;
   font-weight: 500;
-  font-size: 40px;
+  font-size: 30px;
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.02em;
   text-decoration: none;
   transition-property: color;
+
+  @media screen and (min-width: 480px) {
+    font-size: 40px;
+  }
 }
 .mobile-menu__link--current {
   color: #2196f3;

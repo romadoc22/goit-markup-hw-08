@@ -23,7 +23,6 @@
   justify-content: center;
 
   list-style: none;
-  // margin-bottom: 94px;
   gap: 30px;
 
   @media screen and (min-width: 1200px) {
@@ -32,9 +31,9 @@
     justify-content: center;
   }
 }
+
 .clients__item {
-  width: calc((100% / 2) - 30px);
-  // width: 210px;
+  width: calc((100% - 30px) / 2);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -53,11 +52,11 @@
   }
 
   @media screen and (min-width: 768px) {
-    width: 210px;
+    flex-basis: calc((100% - 60px) / 3);
   }
 
-  @media screen and (min-width: 768px) {
-    width: 226px;
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 150px) / 6);
   }
 }
 .clients__icon {

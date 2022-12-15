@@ -1,7 +1,15 @@
-.preferens__list {
-  display: block;
+.section-preferens {
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 0;
+  }
+}
+
+.preferens__list {
+  display: block;
 
   @media screen and (min-width: 768px) {
     display: flex;
@@ -17,16 +25,17 @@
   }
 }
 .preferens__itempr {
-  max-width: 450px;
   color: $primary-text-color;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
+
   @media screen and (min-width: 768px) {
-    max-width: 354px;
+    flex-basis: calc((100% - 30px) / 2);
   }
+
   @media screen and (min-width: 1200px) {
-    max-width: 270px;
+    flex-basis: calc((100% - 90px) / 4);
   }
 }
 

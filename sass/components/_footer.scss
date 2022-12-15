@@ -7,15 +7,28 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 60px;
 
   @media screen and (min-width: 768px) {
     align-items: baseline;
+    gap: 60px 75px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
+}
+
+.footer-adress {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-basis: calc(50% - 40px);
   }
 }
 
 .footer-adress__logo {
-  display: block;
-
   margin-bottom: 28px;
   text-decoration: none;
   text-align: center;
@@ -85,24 +98,12 @@
   }
 }
 .footlist {
-  text-align: center;
-  margin-bottom: 60px;
-  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-  @media screen and (max-width: 767px) {
-    margin-left: 137px;
-    margin-right: 137px;
-  }
-
-  @media screen and (min-width: 768px) {
-    margin-left: 70px;
-    margin-right: 93px;
-    margin-top: 0;
-  }
-
-  @media screen and (min-width: 1200px) {
-    margin-left: 70px;
-    margin-right: 93px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-basis: calc(50% - 40px);
   }
 
   &__title {
@@ -142,6 +143,10 @@
   }
 }
 
+.footlist__link:not(:first-child) {
+  margin-left: 10px;
+}
+
 .footer-form {
   text-align: center;
 
@@ -149,7 +154,6 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-top: 60px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -236,7 +240,4 @@
   position: absolute;
   bottom: 13px;
   right: 28px;
-}
-.footlist__link:not(:first-child) {
-  margin-left: 10px;
 }
