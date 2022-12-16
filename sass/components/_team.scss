@@ -1,18 +1,26 @@
 .section-team {
   background-color: $color-btn-bg;
-  padding-top: 60px;
   padding-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+  }
 }
 
 .team {
-  // display: flex;
-  // justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
   list-style: none;
-  // flex-direction: column;
+  flex-direction: column;
 
   &__title {
     text-align: center;
-    padding-bottom: 50px;
+    padding-top: 60px;
+    padding-bottom: 30px;
     margin: auto;
     font-size: 36px;
     line-height: 1.16;
@@ -22,11 +30,31 @@
 }
 
 .team-list {
+  display: block;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    // display: flex;
+    flex-wrap: nowrap;
+    // justify-content: center;
+    gap: 30px;
+  }
+
   &__item {
     background-color: $pimary-white-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+
+    @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 30px) / 2);
+    }
 
     &--description {
       margin-top: 10px;
@@ -37,21 +65,18 @@
       text-align: center;
     }
   }
-
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    gap: 30px;
-  }
 }
 
 .team-action {
   display: flex;
   list-style: none;
   justify-content: center;
+  padding: 16px 24px;
 
-  margin: 16px 30px 32px 32px;
+  @media screen and (min-width: 1200px) {
+    justify-content: space-between;
+    padding: 16px 30px;
+  }
 
   &__link {
     width: 44px;
@@ -88,4 +113,11 @@
   letter-spacing: 0.03em;
   color: $primary-text-color;
   text-align: center;
+}
+
+.team-list__item:not(:last-child) {
+  margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
 }

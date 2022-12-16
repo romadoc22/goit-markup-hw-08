@@ -1,9 +1,14 @@
 .section-examples {
   display: none;
-  padding-top: 0;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
   @media screen and (min-width: 1200px) {
-    padding-top: 0;
     display: block;
+    margin-bottom: 94px;
+    margin-top: 94px;
   }
 }
 
@@ -19,7 +24,9 @@
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
+  flex-basis: calc((100% - 60px) / 3);
 }
+
 .examples__link {
   position: relative;
 }

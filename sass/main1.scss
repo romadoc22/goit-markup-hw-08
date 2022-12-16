@@ -2,6 +2,7 @@
 @import './utilites/vishid';
 @import './utilites/variables';
 @import './base/normalize';
+
 @import './components/header';
 @import './components/hero';
 @import './components/preference';
@@ -10,10 +11,5 @@
 @import './components/clients';
 @import './components/footer';
 @import './components/popup';
-
-.container {
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
+@import './components/filter';
+@import './components/portfolio';

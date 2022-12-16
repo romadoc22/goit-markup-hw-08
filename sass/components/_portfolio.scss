@@ -1,8 +1,30 @@
+.flex {
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 94px;
+  }
+}
+
 .filter {
   display: flex;
-  justify-content: center;
-  gap: 6px;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  margin-top: 60px;
+  margin-bottom: 40px;
+  gap: 8px;
+
+  @media screen and (min-width: 768px) {
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-bottom: 14px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 34px;
+    margin-top: 94px;
+  }
 }
 .list-filter {
   display: flex;
@@ -11,8 +33,16 @@
   gap: 30px;
 
   &__item {
-    width: 370px;
+    width: 450px;
     border: 1px solid #eeeeee;
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 370px;
+    }
 
     &:hover {
       box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),

@@ -16,78 +16,95 @@
 </head>
 
 <body>
-  <header>
-    <div class="container header">
-      <a href="/" class="header__logo"> <span class="header__title">Web</span>Studio </a>
 
-      <button type="button" class="mobile-button is-open" aria-controls="menu-container" aria-expanded="false"
-        data-menu-button>
-        <svg width="40" height="40" aria-label="перемикач мобільного меню">
-          <use class="icon-burger" href="./images/SVG/icons/symbol-defs.svg#icon-burger"></use>
-          <use class="icon-cross" href="/images/SVG/icons/symbol-defs.svg#icon-cross"></use>
+  <header class="page-header">
+    <div class="container header">
+      <a href="./" class="header__logo"> <span class="header__title">Web</span>Studio </a>
+
+      <button type="button" class="burger js-open-menu" aria-expanded="false" data-menu-button
+        aria-controls="mobile-menu">
+        <svg width="40" height="40" aria-label="мобільне меню">
+          <use class="burger__icon--open" href="./images/SVG/icons/symbol-defs.svg#icon-burger"></use>
+
         </svg>
       </button>
 
-      <div class="menu-container is-open" id="menu-container" data-menu>
-        <!-- <nav>
-          <ul class="header-nav">
-            <li class="header-nav__item"><a href="./index.html"
-                class="header-nav__link header-nav__link--current">Студія</a>
-            </li>
-            <li class="header-nav__item"><a href="./portfolio.html" class="header-nav__link">Портфоліо</a></li>
-            <li class="header-nav__item"><a href="" class="header-nav__link">Контакти</a></li>
-          </ul>
-        </nav>
-        <ul class="header-auth">
-          <li class="header-auth__item">
-            <a href="mailto:info@devstudio.com" class="header-auth__link"><svg class="header-auth__icon" width="16"
-                height="12">
-                <use href="./images/SVG/icons/symbol-defs.svg#icon-mail">
-                </use>
-              </svg>
-              info@devstudio.com</a>
-          </li>
-          <li class="header-auth__item">
-            <a href="tel:+380961111111" class="header-auth__link"> <svg class="header-auth__icon" width="10"
-                height="16">
-                <use href="./images/SVG/icons/symbol-defs.svg#icon-tel">
-                </use>
-              </svg> +38 096 111 11 11</a>
-          </li>
-        </ul> -->
-      </div>
+      <div class="mobile-menu js-menu-container" id="mobile-menu" data-menu>
 
-    </div>
+        <button type="button" class="burgercls js-close-menu" aria-expanded="false" data-menu-button
+          aria-controls="mobile-menu">
+          <svg width="40" height="40" aria-label="мобільне меню">
 
-
-
-    <nav>
-      <ul class="header-nav">
-        <li class="header-nav__item"><a href="./index.html"
-            class="header-nav__link header-nav__link--current">Студія</a>
-        </li>
-        <li class="header-nav__item"><a href="./portfolio.html" class="header-nav__link">Портфоліо</a></li>
-        <li class="header-nav__item"><a href="" class="header-nav__link">Контакти</a></li>
-      </ul>
-    </nav>
-    <ul class="header-auth">
-      <li class="header-auth__item">
-        <a href="mailto:info@devstudio.com" class="header-auth__link"><svg class="header-auth__icon" width="16"
-            height="12">
-            <use href="./images/SVG/icons/symbol-defs.svg#icon-mail">
-            </use>
+            <use class="burger__icon--close js-close-menu" href="./images/SVG/icons/symbol-defs.svg#icon-cross"></use>
           </svg>
-          info@devstudio.com</a>
-      </li>
-      <li class="header-auth__item">
-        <a href="tel:+380961111111" class="header-auth__link"> <svg class="header-auth__icon" width="10" height="16">
-            <use href="./images/SVG/icons/symbol-defs.svg#icon-tel">
-            </use>
-          </svg> +38 096 111 11 11</a>
-      </li>
-    </ul>
+        </button>
+
+
+        <ul class="mobile-menu__list">
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link mobile-menu__link--current" href="./index.html">Студія</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link " href="./portfolio.html">Портфоліо</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="">Контакти</a>
+          </li>
+        </ul>
+
+        <ul class="mobile-menu__contact">
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__address--tel" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__address--mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+        </ul>
+        <ul class="mobile-menu__social--flex">
+          <li class="mobile-menu__social-item">
+            <a class="mobile-menu__social-link" href="https://www.instagram.com">Instagram</a>
+          </li>
+          <li class="mobile-menu__social-item">
+            <a class="mobile-menu__social-link" href="https://twitter.com">Twitter</a>
+          </li>
+          <li class="mobile-menu__social-item">
+            <a class="mobile-menu__social-link" href="https://uk-ua.facebook.com">Facebook</a>
+          </li>
+          <li class="mobile-menu__social-item">
+            <a class="mobile-menu__social-link" href="https://www.linkedin.com">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+      <nav>
+        <ul class="header-nav">
+          <li class="header-nav__item"><a href="./index.html"
+              class="header-nav__link header-nav__link--current">Студія</a>
+          </li>
+          <li class="header-nav__item"><a href="./portfolio.html" class="header-nav__link ">Портфоліо</a></li>
+          <li class="header-nav__item"><a href="" class="header-nav__link">Контакти</a></li>
+        </ul>
+      </nav>
+      <ul class="header-auth">
+        <li class="header-auth__item">
+          <a href="mailto:info@devstudio.com" class="header-auth__link"><svg class="header-auth__icon" width="16"
+              height="12">
+              <use href="./images/SVG/icons/symbol-defs.svg#icon-mail">
+              </use>
+            </svg>
+            info@devstudio.com</a>
+        </li>
+        <li class="header-auth__item">
+          <a href="tel:+380961111111" class="header-auth__link"> <svg class="header-auth__icon" width="10" height="16">
+              <use href="./images/SVG/icons/symbol-defs.svg#icon-tel">
+              </use>
+            </svg> +38 096 111 11 11</a>
+        </li>
+      </ul>
     </div>
+
+
   </header>
+
   <main>
     <!-- Головний баннер -->
     <section class="section-hero">
@@ -157,15 +174,18 @@
         <h2 class="examples__title">Чим ми займаємося</h2>
         <ul class="examples__list">
           <li class="examples__link">
-            <img src="./images/box1.jpg" alt="box1" width="370" height="294" />
+            <img srcset=" ./images/exam/imgexam1_1x.jpg 1x, 
+            ./images/exam/imgexam1_2x.jpg 2x " src="./images/box1.jpg" alt="box1" width="370" height="294" />
             <p class="examples__box">декстопні додатки</p>
           </li>
           <li class="examples__link">
-            <img src="./images/box2.jpg" alt="box2" width="370" height="294" />
+            <img srcset=" ./images/exam/imgexam2_1x.jpg 1x, 
+            ./images/exam/imgexam2_2x.jpg 2x " src="./images/box2.jpg" alt="box2" width="370" height="294" />
             <p class="examples__box">мобільні додатки</p>
           </li>
           <li class="examples__link">
-            <img src="./images/box3.jpg" alt="box3" width="370" height="294" />
+            <img srcset=" ./images/exam/imgexam3_1x.jpg 1x, 
+            ./images/exam/imgexam3_2x.jpg 2x " src="./images/box3.jpg" alt="box3" width="370" height="294" />
             <p class="examples__box">дизайнерські рішення</p>
           </li>
         </ul>
@@ -179,7 +199,15 @@
         <ul class="team-list">
 
           <li class="team-list__item">
-            <img src="./images/team1.jpg" alt="t1" width="270" height="260" />
+            <img srcset=" 
+            ./images/team/mob1_450.jpg 450w, 
+            ./images/team/mob1_900.jpg 900w,
+            ./images/team/tab1-1.jpg 354w,
+            ./images/team/tab1-2.jpg 708w,
+            ./images/team/desk1.jpg 270w,
+            ./images/team/desk1-2.jpg 540w    
+            " sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw "
+              src="./images/team1.jpg" alt="t1" width="450" height="460" />
             <h3 class="team-title__human">Ігор Дем'яненко</h3>
             <p class="team-list__item--description">Product Designer</p>
             <ul class="team-action">
@@ -219,7 +247,15 @@
           </li>
 
           <li class="team-list__item">
-            <img src="./images/team2.jpg" alt="t2" width="270" height="260" />
+            <img srcset="
+            ./images/team/mob2-1.jpg 450w, 
+            ./images/team/mob2-2.jpg 900w,
+            ./images/team/tab2-1.jpg 354w,
+            ./images/team/tab2-2.jpg 708w,
+            ./images/team/desk2-1.jpg 270w,
+            ./images/team/desk2-2.jpg 540w 
+            " sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw "
+              src="./images/team2.jpg" alt="t2" width="450" height="460" />
             <h3 class="team-title__human">Ольга Рєпіна</h3>
             <p class="team-list__item--description">Frontend Developer</p>
             <ul class="team-action">
@@ -259,7 +295,15 @@
 
           </li>
           <li class="team-list__item">
-            <img src="./images/team3.jpg" alt="t3" width="270" height="260" />
+            <img srcset="
+            ./images/team/mob3-1.jpg 450w, 
+            ./images/team/mob3-2.jpg 900w,
+            ./images/team/tab3-1.jpg 354w,
+            ./images/team/tab3-2.jpg 708w,
+            ./images/team/desk3-1.jpg 270w,
+            ./images/team/desk3-2.jpg 540w 
+            " sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw "
+              src="./images/team3.jpg" alt="t3" width="450" height="460" />
             <h3 class="team-title__human">Микола Тарасов</h3>
             <p class="team-list__item--description">Marketing</p>
             <ul class="team-action">
@@ -299,7 +343,15 @@
           </li>
 
           <li class="team-list__item">
-            <img src="./images/team4.jpg" alt="t4" width="270" height="260" />
+            <img srcset="
+            ./images/team/mob4-1.jpg 450w, 
+            ./images/team/mob4-2.jpg 900w,
+            ./images/team/tab4-1.jpg 354w,
+            ./images/team/tab4-2.jpg 708w,
+            ./images/team/desk4-1.jpg 270w,
+            ./images/team/desk4-2.jpg 540w            
+            " sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw "
+              src="./images/team4.jpg" alt="t4" width="450" height="460" />
             <h3 class="team-title__human">Михайло Єрмаков</h3>
             <p class="team-list__item--description">UI Designer</p>
 
@@ -342,7 +394,7 @@
       </div>
     </section>
 
-    <!-- Клієнти -->
+    <!-- Клієнти   -->
     <section class="sectio-clients">
       <div class="container clients">
         <h2 class="clients__title">Постійні клієнти</h2>
@@ -399,7 +451,7 @@
   <footer class="footer">
     <div class="container footblock">
       <div class="footer-adress">
-        <a href="/" class="footer-adress__logo"> <span class="footer-adress__logo--title">Web</span> <span
+        <a href="./index.html" class="footer-adress__logo"> <span class="footer-adress__logo--title">Web</span> <span
             class="footer-adress__logo--span">Studio</span></a>
         <address>
           <ul class="footer-info__list">
@@ -521,7 +573,14 @@
   </div>
 
   <script src="./js/modal.js"></script>
-  <script src="./js/menu.js"></script>
+  <!-- <script src="./js/menu.js"></script> -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+  <script defer src="./js/mobile-menu.js"></script>
+
+
+
 
 </body>
 
