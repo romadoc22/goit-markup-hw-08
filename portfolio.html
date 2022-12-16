@@ -17,90 +17,93 @@
 </head>
 
 <body>
-  <div class="container header">
-    <a href="./" class="header__logo"> <span class="header__title">Web</span>Studio </a>
+  <header class="page-header">
+    <div class="container header">
+      <a href="./" class="header__logo"> <span class="header__title">Web</span>Studio </a>
 
-    <button type="button" class="burger js-open-menu" aria-expanded="false" data-menu-button
-      aria-controls="mobile-menu">
-      <svg width="40" height="40" aria-label="мобільне меню">
-        <use class="burger__icon--open" href="./images/SVG/icons/symbol-defs.svg#icon-burger"></use>
-
-      </svg>
-    </button>
-
-    <div class="mobile-menu js-menu-container" id="mobile-menu" data-menu>
-
-      <button type="button" class="burgercls js-close-menu" aria-expanded="false" data-menu-button
+      <button type="button" class="burger js-open-menu" aria-expanded="false" data-menu-button
         aria-controls="mobile-menu">
         <svg width="40" height="40" aria-label="мобільне меню">
+          <use class="burger__icon--open" href="./images/SVG/icons/symbol-defs.svg#icon-burger"></use>
 
-          <use class="burger__icon--close js-close-menu" href="./images/SVG/icons/symbol-defs.svg#icon-cross"></use>
         </svg>
       </button>
 
+      <div class="mobile-menu js-menu-container" id="mobile-menu" data-menu>
 
-      <ul class="mobile-menu__list">
-        <li class="mobile-menu__item">
-          <a class="mobile-menu__link " href="./index.html">Студія</a>
-        </li>
-        <li class="mobile-menu__item">
-          <a class="mobile-menu__link mobile-menu__link--current" href="./portfolio.html">Портфоліо</a>
-        </li>
-        <li class="mobile-menu__item">
-          <a class="mobile-menu__link" href="">Контакти</a>
-        </li>
-      </ul>
+        <button type="button" class="burgercls js-close-menu" aria-expanded="false" data-menu-button
+          aria-controls="mobile-menu">
+          <svg width="40" height="40" aria-label="мобільне меню">
 
-      <ul class="mobile-menu__contact">
-        <li class="mobile-menu__item">
-          <a class="mobile-menu__address--tel" href="tel:+380961111111">+38 096 111 11 11</a>
+            <use class="burger__icon--close js-close-menu" href="./images/SVG/icons/symbol-defs.svg#icon-cross"></use>
+          </svg>
+        </button>
+
+
+        <ul class="mobile-menu__list">
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link mobile-menu__link--current" href="./index.html">Студія</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link " href="./portfolio.html">Портфоліо</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="">Контакти</a>
+          </li>
+        </ul>
+
+        <ul class="mobile-menu__contact">
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__address--tel" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__address--mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+        </ul>
+        <ul class="mobile-menu__social--flex">
+          <li class="mobile-menu__social-item">
+            <a class="mobile-menu__social-link" href="https://www.instagram.com">Instagram</a>
+          </li>
+          <li class="mobile-menu__social-item">
+            <a class="mobile-menu__social-link" href="https://twitter.com">Twitter</a>
+          </li>
+          <li class="mobile-menu__social-item">
+            <a class="mobile-menu__social-link" href="https://uk-ua.facebook.com">Facebook</a>
+          </li>
+          <li class="mobile-menu__social-item">
+            <a class="mobile-menu__social-link" href="https://www.linkedin.com">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+      <nav>
+        <ul class="header-nav">
+          <li class="header-nav__item"><a href="./index.html"
+              class="header-nav__link header-nav__link--current">Студія</a>
+          </li>
+          <li class="header-nav__item"><a href="./portfolio.html" class="header-nav__link ">Портфоліо</a></li>
+          <li class="header-nav__item"><a href="" class="header-nav__link">Контакти</a></li>
+        </ul>
+      </nav>
+      <ul class="header-auth">
+        <li class="header-auth__item">
+          <a href="mailto:info@devstudio.com" class="header-auth__link"><svg class="header-auth__icon" width="16"
+              height="12">
+              <use href="./images/SVG/icons/symbol-defs.svg#icon-mail">
+              </use>
+            </svg>
+            info@devstudio.com</a>
         </li>
-        <li class="mobile-menu__item">
-          <a class="mobile-menu__address--mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        </li>
-      </ul>
-      <ul class="mobile-menu__social--flex">
-        <li class="mobile-menu__social-item">
-          <a class="mobile-menu__social-link" href="https://www.instagram.com">Instagram</a>
-        </li>
-        <li class="mobile-menu__social-item">
-          <a class="mobile-menu__social-link" href="https://twitter.com">Twitter</a>
-        </li>
-        <li class="mobile-menu__social-item">
-          <a class="mobile-menu__social-link" href="https://uk-ua.facebook.com">Facebook</a>
-        </li>
-        <li class="mobile-menu__social-item">
-          <a class="mobile-menu__social-link" href="https://www.linkedin.com">LinkedIn</a>
+        <li class="header-auth__item">
+          <a href="tel:+380961111111" class="header-auth__link"> <svg class="header-auth__icon" width="10" height="16">
+              <use href="./images/SVG/icons/symbol-defs.svg#icon-tel">
+              </use>
+            </svg> +38 096 111 11 11</a>
         </li>
       </ul>
     </div>
-    <nav>
-      <ul class="header-nav">
-        <li class="header-nav__item"><a href="./index.html" class="header-nav__link">Студія</a>
-        </li>
-        <li class="header-nav__item"><a href="./portfolio.html"
-            class="header-nav__link header-nav__link--current">Портфоліо</a></li>
-        <li class="header-nav__item"><a href="" class="header-nav__link">Контакти</a></li>
-      </ul>
-    </nav>
-    <ul class="header-auth">
-      <li class="header-auth__item">
-        <a href="mailto:info@devstudio.com" class="header-auth__link"><svg class="header-auth__icon" width="16"
-            height="12">
-            <use href="./images/SVG/icons/symbol-defs.svg#icon-mail">
-            </use>
-          </svg>
-          info@devstudio.com</a>
-      </li>
-      <li class="header-auth__item">
-        <a href="tel:+380961111111" class="header-auth__link"> <svg class="header-auth__icon" width="10" height="16">
-            <use href="./images/SVG/icons/symbol-defs.svg#icon-tel">
-            </use>
-          </svg> +38 096 111 11 11</a>
-      </li>
-    </ul>
-  </div>
   </header>
+
+
   <main>
     <section class="section-filter">
       <h1 class=" visually-hidden">Портфоліо</h1>
